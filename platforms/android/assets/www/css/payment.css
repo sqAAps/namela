@@ -1,0 +1,20 @@
+body{
+	background-color: white;
+}
+p.payment_item{
+    font-family: monospace;
+    color: #FFBA66;
+	margin: 0px 5%;
+    padding: 10px 0px;
+    border-bottom: 1px solid gainsboro;
+}
+img.payment_item_img{
+	height: 20px;
+    margin: 0px 5%;
+}
+span.payment_item_name{
+	font-family: sans-serif;
+    font-size: 16px;
+    vertical-align: super;
+	color: darkslategray
+}

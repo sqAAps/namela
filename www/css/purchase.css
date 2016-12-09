@@ -1,0 +1,85 @@
+body{
+	background-color: gainsboro;
+}
+div#purchase_head{
+	padding: 0px;
+    margin: 0px;
+    background-color: white
+}
+div#board{
+	width: 23%;
+    height: 76px;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid gainsboro;
+    margin: 0px;
+}
+img#ready{
+	width: 95%;
+    display: block;
+    margin: auto;
+    margin-top: 4px
+}
+div#board_details{
+	display: inline-block;
+    width: 74%;
+    margin: 0;
+}
+p.ride_details{
+	margin: 0;
+    border-bottom: 1px solid gainsboro;
+    padding: 3px 0px;
+}
+span.details_head{
+	font-size: 12px;
+    margin-left: 2%;
+    vertical-align: top;
+}
+span.details_answer{
+	float: right;
+    margin-right: 2%;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+div.purchase_title{
+	text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: lightslategrey;
+    padding: 5px 0px;
+}
+div.purchase_option{
+	background-color: white;
+    border-color: lightslategray;
+    border-style: solid;
+    border-width: 1px 0px;
+    padding: 7px 5%;
+}
+div.option_details{
+	display: inline-block;
+	margin-left: 18%;
+}
+p.option_amount{
+	margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid gainsboro;
+}
+p.option_description{
+	margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 3px;
+}
+div.option_purchase{
+	display: inline-block;
+    float: right;
+}
+img.purchase{
+	height: 20px;
+    vertical-align: -webkit-baseline-middle;
+}

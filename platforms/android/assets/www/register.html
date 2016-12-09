@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+		
+		<script src="js/chores.js" type="text/javascript"></script>
+		<link href='css/register.css' rel='stylesheet' type="text/css">
+		<link href="images/background.png" rel="shortcut icon">
+        <title>workRide: Registration</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+    </head>
+  
+    <body>
+	
+		<div id="header">
+			<a id="a_header" href="index.html">
+				<img id="logo" src="images/namela_inverse.png"/>
+				<span id="logo_name">namela</span>
+			</a>
+		</div>
+        
+		
+		<div id="container">
+			
+			<h1 id="promote">SIGN UP TO RIDE</h1>
+			<div id="value_prop">
+				Welcome to workRide, the easiest way to get to work at the tap of a button.
+				<p id="value_prop_para">Create your account and never worry about getting to and from work.</p>
+			</div>
+			
+			<form name="register_form" id="register_form" onsubmit="return false;">
+				<div class="chapter_section">
+					<p class="chapter_section_head">Profile</p>
+
+					<p id="input_head">Full Names</p>
+					<input class="register_inputs" id="firstNames" type="text" placeholder="First name" onfocus="emptyElement('error_messages')" />
+					<input class="register_inputs" id="surname" type="text" placeholder="Surname" onfocus="emptyElement('error_messages')" />
+
+					<p id="input_head">Cell Number (10 Digits)</p>
+					<input class="register_inputs" id="cell_number" type="number" placeholder="082 222 2222" onblur="checkphonenumber()" onfocus="emptyElement('error_messages')" />
+				</div>
+			
+				<div class="chapter_section">
+					<p class="chapter_section_head">Account</p>
+
+					<p id="input_head">Email</p>
+					<input class="register_inputs" id="email" type="text" placeholder="name@example.com" onblur="checkemail()" onfocus="emptyElement('error_messages')" onkeyup="restrict('email')" />
+					<p id="error_messages"></p>
+
+					<p id="input_head">Password</p>
+					<input class="register_inputs" id="password" min="10" max="10" type="password" onfocus="emptyElement('error_messages')" />
+
+					<p id="input_head">Confirm Password</p>
+					<input class="register_inputs" id="confirm_password" type="password" onfocus="emptyElement('error_messages')" />
+					
+					<p id="terms_conditions">By clicking “<span id="create_account_lighter">Create Account</span>” , you agree to rideWork <span id="create_account_lighter">Terms and Conditions</span> and <span id="create_account_lighter">Privacy Policy</span>.</p>
+
+					<button id="submit" onclick="signup()" ><span id="status">Create Account</span></button>
+				</div>
+			</form>
+		</div>
+        
+		
+		<div id="confimation">
+			<h1 id="confirmation_head">Confirmation Code</h1> 
+			<p id="confirmation_paragraph">
+				Please check your messages, a 4-digit code has been sent to	<span id="phone_confirmation">XXX XXX XXXX.</span> 
+				
+				<p id="confirmation_paragraph">
+					Please enter the code below to activate your account.
+				</p>
+			
+				<div id="confCodeInput">
+					<input id="confCode" type="number" placeholder="X X X X" onblur="checkphonenumber()"/>
+				</div>
+			
+				<p id="codeError"></p>
+				
+				<button id="go_to_maps" onclick="submitCode()">Submit Code</button>
+			</p>
+		</div>
+		
+	
+		<script>
+			function checkemail(){
+                var e = _("email").value;
+                
+				if(e != ""){
+                    _("error_messages").innerHTML = 'checking email ...';
+					
+					if (e.indexOf("@") > -1 && e.indexOf(".") > -1){
+						_("email").style.borderColor = "gainsboro";
+						_("email").style.borderWidth = "1px";
+						_("submit").disabled = false;
+						
+                    	var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/register.php");
+                    	
+						ajax.onreadystatechange = function() {
+                        	if(ajaxReturn(ajax) == true) {
+                            	_("error_messages").innerHTML = ajax.responseText;
+                        	}
+                    	}
+                    	ajax.send("emailcheck="+e);
+					}else{
+						_("email").style.borderColor = "red";
+						_("email").style.borderWidth = "3px";
+						_("submit").disabled = true;
+					}
+                }
+            }
+			
+			function checkphonenumber(){
+				var pLength = _("cell_number").value.length;
+				if (pLength != 10){
+					_("cell_number").style.borderColor = "red";
+					_("cell_number").style.borderWidth = "3px";
+					_("submit").disabled = true;
+				} else{
+					_("cell_number").style.borderColor = "gainsboro";
+					_("cell_number").style.borderWidth = "1px";
+					_("submit").disabled = false;
+				}
+			}
+			
+			function signup(){
+                var n = _("firstNames").value;
+                var s = _("surname").value;
+                var p = _("cell_number").value;
+                var e = _("email").value;
+                
+                var p1 = _("password").value;
+                var p2 = _("confirm_password").value;
+				
+				var code = Math.floor((Math.random() * 9000) + 1000);
+				
+                var status = _("error_messages");
+
+                if(n == "" || s == "" || p == "" ||  e == "" || p1 == "" || p2 == ""){
+                    status.innerHTML = '<span style="color: #ff0000;font-family: sans-serif;margin-left: 15px;font-size: 15px;">Fill out all of the form data</span>';
+					
+                } else if(p1 != p2){
+                    status.innerHTML = '<span style="color: #ff0000;font-family: sans-serif;margin-left: 15px;font-size: 15px;">Your password fields do not match</span>';
+					
+					_("password").style.borderColor = "red";
+					_("password").style.borderWidth = "3px";
+					_("confirm_password").style.borderColor = "red";
+					_("confirm_password").style.borderWidth = "3px";
+					
+                } else {
+					_("password").style.borderColor = "greenyellow";
+					_("password").style.borderWidth = "2px";
+					_("confirm_password").style.borderColor = "greenyellow";
+					_("confirm_password").style.borderWidth = "2px";
+					
+                    _("submit").style.display = "none";
+                    status.innerHTML = 'please wait ...';
+                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/register.php");
+                    ajax.onreadystatechange = function() {
+                        if(ajaxReturn(ajax) == true) {
+                            if(ajax.responseText === 'signup_success'){
+								_("container").style.display = "none";
+								_("confimation").style.display = "block";
+                                //status.innerHTML = ajax.responseText;
+                            } else {
+								_("container").style.display = "block";
+								_("confimation").style.display = "none";
+								
+								status.innerHTML = ajax.responseText;
+                                _("submit").style.display = "block";
+                            }
+                        }
+                    }
+                    ajax.send("n="+n+"&s="+s+"&p="+p+"&e="+e+"&pass="+p1+"&c="+code);
+                }
+            }
+			
+			function submitCode(){
+				var Confcode = _("confCode").value;
+
+				if (_("confCode").value.length != 4 || Confcode == ""){
+					_("confCode").style.borderColor = "red";
+					_("confCode").style.borderWidth = "3px";
+				} else{
+					_("confCode").style.borderColor = "green";
+					_("confCode").style.borderWidth = "1px";
+					
+					var statusCode = _("codeError");
+					statusCode.innerHTML = 'please wait ...';
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/confirmCode.php");
+                    ajax.onreadystatechange = function() {
+                        if(ajaxReturn(ajax) == true) {
+                            if(ajax.responseText === "Activated"){
+                                window.location.assign("2.maps.html")
+                            } else {
+								statusCode.innerHTML = ajax.responseText;
+                            }
+                        }
+                    }
+                    ajax.send("Confcode="+Confcode);
+				}
+			}
+		</script>
+        
+    </body>
+</html>

@@ -1,0 +1,186 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+div.type{
+	margin: 15px auto;
+    display: block;
+    text-align: center;
+	display: none;
+}
+img.type_img{
+	display: inline-block;
+    height: 28px;
+}
+span.type_text{
+	font-size: 23px;
+    vertical-align: bottom;
+    font-family: sans-serif;
+    color: slategrey;
+}
+
+div.calender{
+	width: 100%;
+	display: none;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+	padding: 20px 5%;
+    width: 90%;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 1px 0px;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: orange;
+    font-size: 18px;
+    letter-spacing: 2px;
+	text-align: center;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 1% 0px 1%;
+    width: 98%;
+    font-size: 10px;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #777;
+    text-align: center
+}
+
+/* Days (1-31) */
+.days {
+	margin: 0;
+    padding: 10px 1% 10px 1%;
+    width: 98%;
+    font-size: 10px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    padding: 5px 0px;
+    font-size:14px;
+    color:black;
+	font-family: sans-serif;
+}
+
+/* Highlight the "current" day */
+.active {
+    background: #FBB040;
+    color: white !important;
+}
+#confirm {
+	margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+div#cancel, div#pick_dates {
+	display: inline-block;
+    float: right;
+    margin-right: 7%;
+    color: #414042;
+    background-color: white;
+    border: 1px solid orange;
+    padding: 5px 3%;
+    border-radius: 7px;
+    box-shadow: 0px 4px 11px #A85A21
+}
+
+.weeknd{
+	color: rgb(200, 200, 200) !important;
+}
+#repeatedDates {
+	color: rgb(200, 200, 200);
+}
+
+/*	S E T T I N G S	*/
+div#image_container{
+	background-color: gainsboro;
+}
+img#img_profile{
+	width: 20%;
+    display: block;
+    margin: auto;
+    padding: 25px 0px;
+    border-radius: 100%;
+}
+div#account_information{
+	border-top: 1px solid slategrey;
+    background-color: #F1F2F2;
+	color: slategray;
+}
+div.full_tags{
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+    border-bottom: 1px solid azure;
+}
+div.full_names{
+	display: inline-block;
+    width: 49%;
+}
+p.names_head{
+	margin: 10px 0px 5px 10%;
+    font-family: monospace;
+	vertical-align: top;
+}
+p.names_input{
+	margin: 0;
+    font-family: sans-serif;
+    margin-left: 10%;
+}
+p.names_head_full{
+	margin: 10px 0px 5px 5%;
+    font-family: monospace;
+    vertical-align: top;
+}
+p.names_input_full{
+	margin: 0;
+    font-family: sans-serif;
+    margin-left: 5%;
+}
+div.logout{
+	background-color: #FBB040;
+    padding: 10px 5%;
+    text-align: center;
+    color: white;
+    margin: 25px 0px;
+}
+img.logout_img{
+	height: 30px;
+}
+span.logout_span{
+	vertical-align: super;
+    font-size: 19px;
+}

@@ -1,0 +1,184 @@
+body, html, #map-canvas {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+	
+div#map-canvas .centerMarker {
+	z-index: 1;
+	position: absolute;
+  		
+	/*url of the marker*/
+	background: url(http://maps.gstatic.com/mapfiles/markers2/marker.png) no-repeat;
+  	
+	/*center the marker*/
+	top: 50%;
+	left: 50%;
+  	
+	/*fix offset when needed*/
+	margin-left: -10px;
+	margin-top: -34px;
+    	            
+	/*size of the image*/
+	height: 34px;
+	width: 20px;
+	cursor: pointer;
+}
+/*///////////////////////////////////////////////////////////////
+/////   Longitude & Latitude     //////////////////////////////*/
+input.location_values{
+	position: absolute;
+    z-index: 3;
+    top: 47px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    width: 48%;
+    text-align: center;
+    color: slategray;
+	font-family: roboto;
+	font-weight: 100;
+}
+input#default_latitude{
+	left: 2%;
+}
+input#default_longitude{
+	right: 2%;
+}
+
+/*///////////////////////////////////////////////////////////////
+///////////         Enter Address           ///////////////////*/
+.controls {
+	margin-top: 10px;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+	
+#pac-input {
+	position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 0px 2%;
+    text-overflow: ellipsis;
+    width: 96%;
+    margin-left: 2%;
+    height: 36px;
+}
+	
+#pac-input:focus {
+	border-color: #4d90fe;
+}
+	
+.pac-container {
+	font-family: Roboto;
+}
+/*///////////////////////////////////////////////////////////////
+///////////         Confimation           ///////////////////*/
+div#confirmation_container{
+	position: fixed;
+	z-index: 3;
+	top: 0;
+}
+img#choose_pickup{
+	height: 20px;
+	float: left;
+	cursor: pointer;
+}
+div#header{
+	background-color: #FFBA66;
+	color: white;
+	width: 100%;
+	padding: 10px 0px 10px 10%;
+	position: fixed;
+	text-align: center;
+	font-size: 20px;
+	font-family: sans-serif;
+	top: 0px;
+	display: none;
+	z-index: 3;
+}
+div#input_container{
+	background-color: white;
+    width: 100%;
+    position: fixed;
+    font-size: 20px;
+    display: none;
+    z-index: 3;
+    bottom: 45px;
+	padding-top: 12px;
+}
+div#Home_information, div#Work_address, div#Work_arrivaltime, div#Work_knock-offtime{
+	margin: auto;
+    width: 49%;
+    font-size: 20px;
+    display: inline-block;
+}
+div#Home_information, div#Work_address{
+	margin-bottom: 10px;
+}
+p.location_name{
+	font-size: 14px;
+    margin: 0px 7%;
+    font-family: sans-serif;
+	color: lightslategrey;
+}
+p#arrivaltime_head.location_name{
+	color: springgreen;
+}
+p#knock-offtime_head.location_name{
+	color: orange;
+}
+
+input#departure_point, input#destination_point{
+	height: 20px;
+    width: 84%;
+    margin: 0px 7%;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 0px 2%;
+    border: 1px solid gainsboro;
+    color: lightslategray;
+}
+
+input#destination_arrival_time, input#destination_knock_off_time{
+	height: 20px;
+    width: 84%;
+    margin: 0px 7%;
+    font-size: 15px;
+    font-family: monospace;
+    padding: 0px 2%;
+    border: 1px solid gainsboro;
+    color: lightslategray;
+}
+p#error_messages{
+    font-family: sans-serif;
+    margin: 7px 4%;
+    font-size: 15px;
+	text-align: center;
+}
+button#setPickupLocation_div, button#setDropoffLocation_div{
+	background-color: #FFA81B;
+	border: 0px solid;
+	width: 100%;
+	padding: 10px 0px;
+	position: fixed;
+	text-align: center;
+	font-size: 20px;
+	bottom: 2px;
+	color: white;
+	font-family: roboto;
+	cursor: pointer;
+	z-index: 3;
+}
+button#setDropoffLocation_div{
+	display: none;
+}

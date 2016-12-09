@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+		<script src="js/chores.js" type="text/javascript"></script>
+		<link href='css/user_request.css' rel='stylesheet' type="text/css">
+		<link href='css/user_interface.css' rel='stylesheet' type="text/css">
+		<link href='css/register.css' rel='stylesheet' type="text/css">
+        <link href="images/background.png" rel="shortcut icon">
+        <title>workRide</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+    </head>
+  
+    <body>
+		<div id="header">
+			<img class="header_img" id="menu" src="images/menu.png"/>
+			workRide
+			<img class="header_img" id="log_out" src="images/logout.png" onclick="logout()"/>
+		</div>
+		
+		<div id="user_interface"></div>
+		
+		<script type="text/javascript">
+			function profile(){
+				var user_interface = _("user_interface");
+				var ajax = ajaxObj("POST", "http://sqaaps.co.za/php/user_interface.php");
+				//var ajax = ajaxObj("POST", "php/user_interface.php");
+				ajax.onreadystatechange = function() {
+					if(ajaxReturn(ajax) == true) {
+						if(ajax.responseText == "Success"){
+							user_interface.innerHTML = ajax.responseText;
+						} else {
+							user_interface.innerHTML = ajax.responseText;
+						}
+					}
+				}
+				ajax.send("user_interface="+'');
+			}
+			window.onload = profile;
+			
+			function logout(){
+				localStorage.removeItem("phoneNumber");
+				localStorage.removeItem("password");
+				var ajax = ajaxObj("POST", "http://sqaaps.co.za/php/login.php");
+				//var ajax = ajaxObj("POST", "php/login.php");
+				ajax.send("logout="+'');
+				window.location.assign("index.html")
+				
+			}
+			function edit_info(){
+				window.location.assign("2.maps.html");
+			}
+			function add_trip(){
+				window.location.assign("3.user_request.html");
+			}
+		</script>
+	</body>
+</html>

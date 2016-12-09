@@ -1,0 +1,16 @@
+div#form{
+	display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+p.tag{
+	margin: 0;
+    font-family: monospace;
+    font-size: 14px;
+    display: block;
+}
+.input{
+	width: 93%;
+    padding: 2px 2%;
+}

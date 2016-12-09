@@ -1,0 +1,21 @@
+{
+  "name": "namela",
+  "version": "4.0.2",
+  "description": "> One mode of transport to and from work",
+  "repository": {
+    "type": "git",
+    "url": "https://sqaaps.co.za"
+  },
+  "author": "sqAAps",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": "https://sqaaps.co.za"
+  },
+  "homepage": "https://sqaaps.co.za"
+}

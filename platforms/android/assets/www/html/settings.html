@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../js/jquery.js"></script>
+		<script src="../js/chores.js" type="text/javascript"></script>
+		<script src="../js/pages.js"></script>
+			
+		<link href='../css/user_request.css' rel='stylesheet' type="text/css">
+		<link href='../css/user_interface.css' rel='stylesheet' type="text/css">
+		<link href='../css/register.css' rel='stylesheet' type="text/css">
+		
+        <link href="../images/background.png" rel="shortcut icon">
+        <title>Namela</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+		
+    </head>
+  
+    <body>
+		<div id="header">
+			<img class="header_img" id="menu" src="../images/maps_backward.png" onclick="back()" />
+			Settings
+		</div>
+		
+		<div id="image_container">
+			<img id="img_profile" src="../images/profile.png"/>
+		</div>
+		
+		<div id="account_information">
+			<div class="full_tags">
+				<div class="full_names">
+					<p class="names_head">FIRST NAME</p>
+					<p class="names_input" id="settings_name">
+						<script>
+							_("settings_name").innerHTML = localStorage.getItem("name");
+						</script>
+					</p>
+				</div>
+				<div class="full_names">
+					<p class="names_head">LAST NAME</p>
+					<p class="names_input" id="settings_surname">
+						<script>
+							_("settings_surname").innerHTML = localStorage.getItem("surname");
+						</script>
+					</p>
+				</div>
+			</div>
+			
+			<div class="full_tags">
+				<p class="names_head_full">EMAIL</p>
+				<p class="names_input_full" id="settings_email">
+					<script>
+						_("settings_email").innerHTML = localStorage.getItem("email");
+					</script>
+				</p>
+			</div>
+			
+			<div class="full_tags">
+				<p class="names_head_full">MOBILE</p>
+				<p class="names_input_full" id="settings_number">
+					<script>
+						_("settings_number").innerHTML = localStorage.getItem("phoneNumber");
+					</script>
+				</p>
+			</div>
+		</div>
+		
+		<div class="logout" onclick="logout()">
+			<img class="logout_img" src="../images/logout.png"/>
+			<span class="logout_span">LOGOUT</span>
+		</div>
+		<script>	
+			function logout(){
+				localStorage.removeItem("phoneNumber");
+				localStorage.removeItem("password");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+				//var ajax = ajaxObj("POST", "../php/login.php");
+				ajax.send("logout="+'');
+				window.location.assign("../index.html")
+			}
+		</script>
+		
+	</body>
+</html>

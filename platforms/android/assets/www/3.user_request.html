@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+		<script src="js/chores.js" type="text/javascript"></script>
+		<link href='css/register.css' rel='stylesheet' type="text/css">
+		<link href='css/user_request.css' rel='stylesheet' type="text/css">
+        <link href="images/background.png" rel="shortcut icon">
+        <title>workRide</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+    </head>
+  
+    <body>
+		<div id="header">
+			<a id="a_header" href="index.html">
+				<img id="logo" src="images/namela_inverse.png"/>
+				<span id="logo_name">namela</span>
+			</a>
+		</div>
+		
+		<div class="type" id="from_home">
+			<img class="type_img" src="images/home.png"/>
+			<span class="type_text">From Home to Work</span>
+		</div>
+		
+		<div class="type" id="from_work">
+			<img class="type_img" src="images/building.png"/>
+			<span class="type_text">From Work to Home</span>
+		</div>
+		
+		<div class="calender" id="month.8">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.7")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.9")'>&#10095;</li>
+					<li>September 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days">
+				<li id="repeatedDates">28</li>
+				
+			  	<li id="repeatedDates">29</li>
+			  	<li id="repeatedDates">30</li>
+			  	<li id="repeatedDates">31</li>
+				
+				<li id="month.8.day.1" onclick='selectdag("month.8.day.1")'>1</li>
+			  	<li id="month.8.day.2" onclick='selectdag("month.8.day.2")'>2</li>
+				
+			  	<li id="month.8.day.3" class="weeknd">3</li>
+			  	<li id="month.8.day.4" class="weeknd">4</li>
+				
+			  	<li id="month.8.day.5" onclick='selectdag("month.8.day.5")'>5</li>
+			  	<li id="month.8.day.6" onclick='selectdag("month.8.day.6")'>6</li>
+			  	<li id="month.8.day.7" onclick='selectdag("month.8.day.7")'>7</li>
+			  	<li id="month.8.day.8" onclick='selectdag("month.8.day.8")'>8</li>
+			  	<li id="month.8.day.9" onclick='selectdag("month.8.day.9")'>9</li>
+				
+			  	<li id="month.8.day.10" class="weeknd">10</li>
+			  	<li id="month.8.day.11" class="weeknd">11</li>
+				
+				<li id="month.8.day.12" onclick='selectdag("month.8.day.12")'>12</li>
+			  	<li id="month.8.day.13" onclick='selectdag("month.8.day.13")'>13</li>
+			  	<li id="month.8.day.14" onclick='selectdag("month.8.day.14")'>14</li>
+			  	<li id="month.8.day.15" onclick='selectdag("month.8.day.15")'>15</li>
+			  	<li id="month.8.day.16" onclick='selectdag("month.8.day.16")'>16</li>
+				
+			  	<li id="month.8.day.17" class="weeknd">17</li>
+				<li id="month.8.day.18" class="weeknd">18</li>
+				
+			  	<li id="month.8.day.19" onclick='selectdag("month.8.day.19")'>19</li>
+			  	<li id="month.8.day.20" onclick='selectdag("month.8.day.20")'>20</li>
+			  	<li id="month.8.day.21" onclick='selectdag("month.8.day.21")'>21</li>
+			  	<li id="month.8.day.22" onclick='selectdag("month.8.day.22")'>22</li>
+			  	<li id="month.8.day.23" onclick='selectdag("month.8.day.23")'>23</li>
+				
+				<li id="month.8.day.24" class="weeknd">24</li>
+			  	<li id="month.8.day.25" class="weeknd">25</li>
+				
+			  	<li id="month.8.day.26" onclick='selectdag("month.8.day.26")'>26</li>
+			  	<li id="month.8.day.27" onclick='selectdag("month.8.day.27")'>27</li>
+			  	<li id="month.8.day.28" onclick='selectdag("month.8.day.28")'>28</li>
+			  	<li id="month.8.day.29" onclick='selectdag("month.8.day.29")'>29</li>
+				<li id="month.8.day.30" onclick='selectdag("month.8.day.30")'>30</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="calender" id="month.9">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.8")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.10")'>&#10095;</li>
+					<li>October 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+				<li id="repeatedDates" class="weeknd">25</li>
+				
+			  	<li id="repeatedDates">26</li>
+			  	<li id="repeatedDates">27</li>
+			  	<li id="repeatedDates">28</li>
+			  	<li id="repeatedDates">29</li>
+				<li id="repeatedDates">30</li>
+				
+				<li id="month.9.day.1" class="weeknd">1</li>
+			  	<li id="month.9.day.2" class="weeknd">2</li>
+				
+			  	<li id="month.9.day.3" onclick='selectdag("month.9.day.3")'>3</li>
+			  	<li id="month.9.day.4" onclick='selectdag("month.9.day.4")'>4</li>
+			  	<li id="month.9.day.5" onclick='selectdag("month.9.day.5")'>5</li>
+			  	<li id="month.9.day.6" onclick='selectdag("month.9.day.6")'>6</li>
+			  	<li id="month.9.day.7" onclick='selectdag("month.9.day.7")'>7</li>
+				
+			  	<li id="month.9.day.8" class="weeknd">8</li>
+				<li id="month.9.day.9" class="weeknd">9</li>
+				
+			  	<li id="month.9.day.10" onclick='selectdag("month.9.day.10")'>10</li>
+				<li id="month.9.day.11" onclick='selectdag("month.9.day.11")'>11</li>
+				<li id="month.9.day.12" onclick='selectdag("month.9.day.12")'>12</li>
+			  	<li id="month.9.day.13" onclick='selectdag("month.9.day.13")'>13</li>
+			  	<li id="month.9.day.14" onclick='selectdag("month.9.day.14")'>14</li>
+				
+			  	<li id="month.9.day.15" class="weeknd">15</li>
+			  	<li id="month.9.day.16" class="weeknd">16</li>
+				
+			  	<li id="month.9.day.17" onclick='selectdag("month.9.day.17")'>17</li>
+				<li id="month.9.day.18" onclick='selectdag("month.9.day.18")'>18</li>
+			  	<li id="month.9.day.19" onclick='selectdag("month.9.day.19")'>19</li>
+			  	<li id="month.9.day.20" onclick='selectdag("month.9.day.20")'>20</li>
+			  	<li id="month.9.day.21" onclick='selectdag("month.9.day.21")'>21</li>
+				
+			  	<li id="month.9.day.22" class="weeknd">22</li>
+			  	<li id="month.9.day.23" class="weeknd">23</li>
+				
+				<li id="month.9.day.24" onclick='selectdag("month.9.day.24")'>24</li>
+			  	<li id="month.9.day.25" onclick='selectdag("month.9.day.25")'>25</li>
+			  	<li id="month.9.day.26" onclick='selectdag("month.9.day.26")'>26</li>
+			  	<li id="month.9.day.27" onclick='selectdag("month.9.day.27")'>27</li>
+			  	<li id="month.9.day.28" onclick='selectdag("month.9.day.28")'>28</li>
+			  	
+				<li id="month.9.day.29" class="weeknd">29</li>
+				<li id="month.9.day.30" class="weeknd">30</li>
+				
+				<li id="month.9.day.31" onclick='selectdag("month.9.day.31")'>31</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="calender" id="month.10">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.9")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.11")'>&#10095;</li>
+					<li>November 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+			  	<li id="repeatedDates" class="weeknd">30</li>
+				<li id="repeatedDates">31</li>
+				
+				<li id="month.10.day.1" onclick='selectdag("month.10.day.1")'>1</li>
+			  	<li id="month.10.day.2" onclick='selectdag("month.10.day.2")'>2</li>
+			  	<li id="month.10.day.3" onclick='selectdag("month.10.day.3")'>3</li>
+			  	<li id="month.10.day.4" onclick='selectdag("month.10.day.4")'>4</li>
+				
+			  	<li id="month.10.day.5" class="weeknd">5</li>
+			  	<li id="month.10.day.6" class="weeknd">6</li>
+				
+			  	<li id="month.10.day.7" onclick='selectdag("month.10.day.7")'>7</li>
+			  	<li id="month.10.day.8" onclick='selectdag("month.10.day.8")'>8</li>
+			  	<li id="month.10.day.9" onclick='selectdag("month.10.day.9")'>9</li>
+			  	<li id="month.10.day.10" onclick='selectdag("month.10.day.10")'>10</li>
+			  	<li id="month.10.day.11" onclick='selectdag("month.10.day.11")'>11</li>
+				
+				<li id="month.10.day.12" class="weeknd">12</li>
+			  	<li id="month.10.day.13" class="weeknd">13</li>
+				
+			  	<li id="month.10.day.14" onclick='selectdag("month.10.day.14")'>14</li>
+			  	<li id="month.10.day.15" onclick='selectdag("month.10.day.15")'>15</li>
+			  	<li id="month.10.day.16" onclick='selectdag("month.10.day.16")'>16</li>
+			  	<li id="month.10.day.17" onclick='selectdag("month.10.day.17")'>17</li>
+				<li id="month.10.day.18" onclick='selectdag("month.10.day.18")'>18</li>
+				
+			  	<li id="month.10.day.19" class="weeknd">19</li>
+			  	<li id="month.10.day.20" class="weeknd">20</li>
+				
+			  	<li id="month.10.day.21" onclick='selectdag("month.10.day.21")'>21</li>
+			  	<li id="month.10.day.22" onclick='selectdag("month.10.day.22")'>22</li>
+			  	<li id="month.10.day.23" onclick='selectdag("month.10.day.23")'>23</li>
+				<li id="month.10.day.24" onclick='selectdag("month.10.day.24")'>24</li>
+			  	<li id="month.10.day.25" onclick='selectdag("month.10.day.25")'>25</li>
+				
+			  	<li id="month.10.day.26" class="weeknd">26</li>
+			  	<li id="month.10.day.27" class="weeknd">27</li>
+				
+			  	<li id="month.10.day.28" onclick='selectdag("month.10.day.28")'>28</li>
+			  	<li id="month.10.day.29" onclick='selectdag("month.10.day.29")'>29</li>
+				<li id="month.10.day.30" onclick='selectdag("month.10.day.30")'>30</li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="calender" id="month.11">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.10")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.0")'>&#10095;</li>
+					<li>December 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+			  	<li id="repeatedDates" class="weeknd">29</li>
+				
+				<li id="repeatedDates">28</li>
+				<li id="repeatedDates">29</li>
+				<li id="repeatedDates">30</li>
+				<li id="month.11.day.1" onclick='selectdag("month.11.day.1")'>1</li>
+			  	<li id="month.11.day.2" onclick='selectdag("month.11.day.2")'>2</li>
+				
+			  	<li id="month.11.day.3" class="weeknd">3</li>
+			  	<li id="month.11.day.4" class="weeknd">4</li>
+				
+			  	<li id="month.11.day.5" onclick='selectdag("month.11.day.5")'>5</li>
+			  	<li id="month.11.day.6" onclick='selectdag("month.11.day.6")'>6</li>
+			  	<li id="month.11.day.7" onclick='selectdag("month.11.day.7")'>7</li>
+			  	<li id="month.11.day.8" onclick='selectdag("month.11.day.8")'>8</li>
+			  	<li id="month.11.day.9" onclick='selectdag("month.11.day.9")'>9</li>
+				
+			  	<li id="month.11.day.10" class="weeknd">10</li>
+			  	<li id="month.11.day.11" class="weeknd">11</li>
+				
+				<li id="month.11.day.12" onclick='selectdag("month.11.day.12")'>12</li>
+			  	<li id="month.11.day.13" onclick='selectdag("month.11.day.13")'>13</li>
+			  	<li id="month.11.day.14" onclick='selectdag("month.11.day.14")'>14</li>
+			  	<li id="month.11.day.15" onclick='selectdag("month.11.day.15")'>15</li>
+			  	<li id="month.11.day.16" onclick='selectdag("month.11.day.16")'>16</li>
+				
+			  	<li id="month.11.day.17" class="weeknd">17</li>
+				<li id="month.11.day.18" class="weeknd">18</li>
+				
+			  	<li id="month.11.day.19" onclick='selectdag("month.11.day.19")'>19</li>
+			  	<li id="month.11.day.20" onclick='selectdag("month.11.day.20")'>20</li>
+			  	<li id="month.11.day.21" onclick='selectdag("month.11.day.21")'>21</li>
+			  	<li id="month.11.day.22" onclick='selectdag("month.11.day.22")'>22</li>
+			  	<li id="month.11.day.23" onclick='selectdag("month.11.day.23")'>23</li>
+				
+				<li id="month.11.day.24" class="weeknd">24</li>
+			  	<li id="month.11.day.25" class="weeknd">25</li>
+				
+			  	<li id="month.11.day.26" onclick='selectdag("month.11.day.26")'>26</li>
+			  	<li id="month.11.day.27" onclick='selectdag("month.11.day.27")'>27</li>
+			  	<li id="month.11.day.28" onclick='selectdag("month.11.day.28")'>28</li>
+			  	<li id="month.11.day.29" onclick='selectdag("month.11.day.29")'>29</li>
+				<li id="month.11.day.30" onclick='selectdag("month.11.day.30")'>30</li>
+				
+				<li id="month.11.day.31" class="weeknd">31</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		<div class="calender" id="month.0">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.11")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.1")'>&#10095;</li>
+					<li>January 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+				<li id="month.0.day.1" class="weeknd">1</li>
+				
+			  	<li id="month.0.day.2" onclick='selectdag("month.0.day.2")'>2</li>
+			  	<li id="month.0.day.3" onclick='selectdag("month.0.day.3")'>3</li>
+			  	<li id="month.0.day.4" onclick='selectdag("month.0.day.4")'>4</li>
+			  	<li id="month.0.day.5" onclick='selectdag("month.0.day.5")'>5</li>
+			  	<li id="month.0.day.6" onclick='selectdag("month.0.day.6")'>6</li>
+				
+			  	<li id="month.0.day.7" class="weeknd">7</li>
+			  	<li id="month.0.day.8" class="weeknd">8</li>
+		
+				<li id="month.0.day.9" onclick='selectdag("month.0.day.9")'>9</li>
+			  	<li id="month.0.day.10" onclick='selectdag("month.0.day.10")'>10</li>
+			  	<li id="month.0.day.11" onclick='selectdag("month.0.day.11")'>11</li>
+				<li id="month.0.day.12" onclick='selectdag("month.0.day.12")'>12</li>
+			  	<li id="month.0.day.13" onclick='selectdag("month.0.day.13")'>13</li>
+				
+			  	<li id="month.0.day.14" class="weeknd">14</li>
+			  	<li id="month.0.day.15" class="weeknd">15</li>
+				
+			  	<li id="month.0.day.16" onclick='selectdag("month.0.day.16")'>16</li>
+			  	<li id="month.0.day.17" onclick='selectdag("month.0.day.17")'>17</li>
+				<li id="month.0.day.18" onclick='selectdag("month.0.day.18")'>18</li>
+			  	<li id="month.0.day.19" onclick='selectdag("month.0.day.19")'>19</li>
+			  	<li id="month.0.day.20" onclick='selectdag("month.0.day.20")'>20</li>
+				
+			  	<li id="month.0.day.21" class="weeknd">21</li>
+			  	<li id="month.0.day.22" class="weeknd">22</li>
+				
+			  	<li id="month.0.day.23" onclick='selectdag("month.0.day.23")'>23</li>
+				<li id="month.0.day.24" onclick='selectdag("month.0.day.24")'>24</li>
+			  	<li id="month.0.day.25" onclick='selectdag("month.0.day.25")'>25</li>
+			  	<li id="month.0.day.26" onclick='selectdag("month.0.day.26")'>26</li>
+			  	<li id="month.0.day.27" onclick='selectdag("month.0.day.27")'>27</li>
+				
+			  	<li id="month.0.day.28" class="weeknd">28</li>
+			  	<li id="month.0.day.29" class="weeknd">29</li>
+				
+				<li id="month.0.day.30" onclick='selectdag("month.0.day.30")'>30</li>
+				<li id="month.0.day.31" onclick='selectdag("month.0.day.31")'>31</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="calender" id="month.1">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.0")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.2")'>&#10095;</li>
+					<li>February 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+			  	<li id="repeatedDates" class="weeknd">29</li>
+				
+				<li id="repeatedDates">30</li>
+				<li id="repeatedDates">31</li>
+				<li id="month.1.day.1" onclick='selectdag("month.1.day.1")'>1</li>
+			  	<li id="month.1.day.2" onclick='selectdag("month.1.day.2")'>2</li>
+			  	<li id="month.1.day.3" onclick='selectdag("month.1.day.3")'>3</li>
+				
+			  	<li id="month.1.day.4" class="weeknd">4</li>
+			  	<li id="month.1.day.5" class="weeknd">5</li>
+				
+			  	<li id="month.1.day.6" onclick='selectdag("month.1.day.6")'>6</li>
+			  	<li id="month.1.day.7" onclick='selectdag("month.1.day.7")'>7</li>
+			  	<li id="month.1.day.8" onclick='selectdag("month.1.day.8")'>8</li>
+			  	<li id="month.1.day.9" onclick='selectdag("month.1.day.9")'>9</li>
+			  	<li id="month.1.day.10" onclick='selectdag("month.1.day.10")'>10</li>
+				
+			  	<li id="month.1.day.11" class="weeknd">11</li>
+				<li id="month.1.day.12" class="weeknd">12</li>
+				
+			  	<li id="month.1.day.13" onclick='selectdag("month.1.day.13")'>13</li>
+			  	<li id="month.1.day.14" onclick='selectdag("month.1.day.14")'>14</li>
+			  	<li id="month.1.day.15" onclick='selectdag("month.1.day.15")'>15</li>
+			  	<li id="month.1.day.16" onclick='selectdag("month.1.day.16")'>16</li>
+			  	<li id="month.1.day.17" onclick='selectdag("month.1.day.17")'>17</li>
+				
+				<li id="month.1.day.18" class="weeknd">18</li>
+			  	<li id="month.1.day.19" class="weeknd">19</li>
+			  	
+				<li id="month.1.day.20" onclick='selectdag("month.1.day.20")'>20</li>
+			  	<li id="month.1.day.21" onclick='selectdag("month.1.day.21")'>21</li>
+			  	<li id="month.1.day.22" onclick='selectdag("month.1.day.22")'>22</li>
+			  	<li id="month.1.day.23" onclick='selectdag("month.1.day.23")'>23</li>
+				<li id="month.1.day.24" onclick='selectdag("month.1.day.24")'>24</li>
+				
+			  	<li id="month.1.day.25" class="weeknd">25</li>
+			  	<li id="month.1.day.26" class="weeknd">26</li>
+				
+			  	<li id="month.1.day.27" onclick='selectdag("month.1.day.27")'>27</li>
+			  	<li id="month.1.day.28" onclick='selectdag("month.1.day.28")'>28</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		<div class="calender" id="month.2">
+			<div class="month"> 
+				<ul>
+					<li class="prev" onclick='previousmonth("month.1")'>&#10094;</li>
+					<li class="next" onclick='nextmonth("month.3")'>&#10095;</li>
+					<li>March 2016</li>
+			  	</ul>
+			</div>
+
+			<ul class="weekdays">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+
+			<ul class="days"> 
+			  	<li id="repeatedDates" class="weeknd">26</li>
+				
+				<li id="repeatedDates">27</li>
+				<li id="repeatedDates">28</li>
+				<li id="month.2.day.1" onclick='selectdag("month.2.day.1")'>1</li>
+			  	<li id="month.2.day.2" onclick='selectdag("month.2.day.2")'>2</li>
+			  	<li id="month.2.day.3" onclick='selectdag("month.2.day.3")'>3</li>
+				
+			  	<li id="month.2.day.4" class="weeknd">4</li>
+			  	<li id="month.2.day.5" class="weeknd">5</li>
+				
+			  	<li id="month.2.day.6" onclick='selectdag("month.2.day.6")'>6</li>
+			  	<li id="month.2.day.7" onclick='selectdag("month.2.day.7")'>7</li>
+			  	<li id="month.2.day.8" onclick='selectdag("month.2.day.8")'>8</li>
+			  	<li id="month.2.day.9" onclick='selectdag("month.2.day.9")'>9</li>
+			  	<li id="month.2.day.10" onclick='selectdag("month.2.day.10")'>10</li>
+				
+			  	<li id="month.2.day.11" class="weeknd">11</li>
+				<li id="month.2.day.12" class="weeknd">12</li>
+				
+			  	<li id="month.2.day.13" onclick='selectdag("month.2.day.13")'>13</li>
+			  	<li id="month.2.day.14" onclick='selectdag("month.2.day.14")'>14</li>
+			  	<li id="month.2.day.15" onclick='selectdag("month.2.day.15")'>15</li>
+			  	<li id="month.2.day.16" onclick='selectdag("month.2.day.16")'>16</li>
+			  	<li id="month.2.day.17" onclick='selectdag("month.2.day.17")'>17</li>
+				
+				<li id="month.2.day.18" class="weeknd">18</li>
+			  	<li id="month.2.day.19" class="weeknd">19</li>
+				
+			  	<li id="month.2.day.20" onclick='selectdag("month.2.day.20")'>20</li>
+			  	<li id="month.2.day.21" onclick='selectdag("month.2.day.21")'>21</li>
+			  	<li id="month.2.day.22" onclick='selectdag("month.2.day.22")'>22</li>
+			  	<li id="month.2.day.23" onclick='selectdag("month.2.day.23")'>23</li>
+				<li id="month.2.day.24" onclick='selectdag("month.2.day.24")'>24</li>
+				
+			  	<li id="month.2.day.25" class="weeknd">25</li>
+			  	<li id="month.2.day.26" class="weeknd">26</li>
+				
+			  	<li id="month.2.day.27" onclick='selectdag("month.2.day.27")'>27</li>
+			  	<li id="month.2.day.28" onclick='selectdag("month.2.day.28")'>28</li>
+			  	<li id="month.2.day.29" onclick='selectdag("month.2.day.29")'>29</li>
+				<li id="month.2.day.30" onclick='selectdag("month.2.day.30")'>30</li>
+				<li id="month.2.day.31" onclick='selectdag("month.2.day.31")'>31</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div id="confirm">
+			<a id="" href="4.user_interface.html">
+				<div id="pick_dates">DONE</div>
+			</a>
+		</div>
+		
+		
+		
+		<script>
+			function getDate(){
+				var url = window.location.href;
+				var spliturl = url.split("?");
+				var type = spliturl[1];
+				
+				if (type === 'Home_to_Work'){
+					_("from_home").style.display = "block";
+				}else if (type === 'Work_to_Home'){
+					_("from_work").style.display = "block";
+				}
+				
+    			var fullDate = new Date();
+				//Get the Month in numbers i.e. return 0 if January
+    			var month = fullDate.getMonth();
+				//Get the day only e.g 27
+				var date = fullDate.getDate();
+				
+				//makes All Previous Month days grey
+				for (i = 8; i < month; i++) {
+					var i = i.toString();
+					
+					for (j = 1; j <= 31; j++) {
+						var j = j.toString();
+						if(_("month."+i+".day."+j)){
+							_("month."+i+".day."+j).style.color = "rgb(200, 200, 200)";
+						}
+					}
+				}
+				
+				//Show the current month
+				var month = month.toString();
+				_("month."+month).style.display = "block";
+				
+				
+				//Takes the past days of current month and makes them grey
+				for (i = 1; i < date; i++) {
+					var i = i.toString();
+					_("month."+month+".day."+i).style.color = "rgb(200, 200, 200)";
+				}
+				
+				//Makes the current day orange
+				var date = date.toString();
+				_("month."+month+".day."+date).style.setProperty ("color", "orangered", "important");
+				_("month."+month+".day."+date).style.setProperty ("font-size", "15px", "important");
+				_("month."+month+".day."+date).style.fontWeight = "600";
+				
+				
+				//Get currently selected dates
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+				//var ajax = ajaxObj("POST", "php/user_requests.php");
+				ajax.onreadystatechange = function() {
+					if(ajaxReturn(ajax) == true) {
+						if(ajax.responseText){
+							var dateText = ajax.responseText;
+							
+							var first = dateText.replace(/"/g,"");
+							var second = first.replace("[","");
+							var third = second.replace("]","");
+							
+							var id_array = third.split(",");
+							for (k = 0; k < id_array.length; k++){
+								//selected date
+								var property = _(id_array[k]);
+								property.className = 'active';
+							}
+									
+						}
+					}
+				}
+				ajax.send("getDates="+type);
+				
+			}
+
+			window.onload = getDate;
+			
+			function selectdag(id){
+				var url = window.location.href;
+				var spliturl = url.split("?");
+				var type = spliturl[1];
+				
+				//selected date
+				var id_array = id.split(".");
+				var selected_month = parseInt(id_array[1]);
+				var selected_date = parseInt(id_array[3]);
+				
+				//current date
+				var fullDate = new Date();
+    			var month = fullDate.getMonth();
+				var date = fullDate.getDate();
+				
+				//Bookings for the current month
+				if (selected_month > month){
+					var property = _(id);
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					//var ajax = ajaxObj("POST", "php/user_requests.php");
+					
+					if (property.className != 'active') {
+						property.className = 'active';
+						ajax.onreadystatechange = function() {
+							if(ajaxReturn(ajax) == true) {
+                            	if(ajax.responseText !== "DateSaved"){
+									property.className = '';
+								}
+                        	}
+                    	}
+						ajax.send("date="+id+"&add="+'add'+'&type='+type);
+					}
+					
+					else if (property.className === 'active') {
+						property.className = '';
+						ajax.onreadystatechange = function() {
+							if(ajaxReturn(ajax) == true) {
+                            	if(ajax.responseText !== "Deleted"){
+									property.className = 'active';
+								}
+                        	}
+                    	}
+						ajax.send("date="+id+"&remove="+'remove'+'&type='+type);
+					}
+				}
+				else if(selected_month = month && selected_date >= date){
+					var property = _(id);
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					//var ajax = ajaxObj("POST", "php/user_requests.php");
+					
+					if (property.className != 'active') {
+						property.className = 'active';
+						ajax.onreadystatechange = function() {
+							if(ajaxReturn(ajax) == true) {
+                            	if(ajax.responseText !== "DateSaved"){
+									property.className = '';
+								}
+                        	}
+                    	}
+						ajax.send("date="+id+"&add="+'add'+'&type='+type);
+					}
+					else if (property.className === 'active') {
+						property.className = '';
+						ajax.onreadystatechange = function() {
+							if(ajaxReturn(ajax) == true) {
+                            	if(ajax.responseText !== "Deleted"){
+									property.className = 'active';
+								}
+                        	}
+                    	}
+						ajax.send("date="+id+"&remove="+'remove'+'&type='+type);
+					}
+				}
+				else {
+					property.className = '';
+				}
+			}
+			
+			function nextmonth(id){
+				var fullDate = new Date();
+    			var this_month = fullDate.getMonth();
+				
+				//show next month
+				var id_array = id.split(".");
+				var current_month = parseInt(id_array[1]) - 1;
+				var next_month = parseInt(id_array[1]);
+				
+				if (next_month < (this_month+3)){
+					_("month."+current_month).style.display = "none";
+					_("month."+next_month).style.display = "block";
+				}
+			}
+			
+			function previousmonth(id){
+				var fullDate = new Date();
+    			var realmonth = fullDate.getMonth();
+				//show next month
+				var id_array = id.split(".");
+				var previous_month = parseInt(id_array[1]);
+				
+				var current_month = parseInt(id_array[1]) + 1;
+				
+				if (previous_month >= realmonth){
+					_("month."+current_month).style.display = "none";
+					_("month."+previous_month).style.display = "block";	
+				}
+			}
+		</script>
+	</body>
+</html>

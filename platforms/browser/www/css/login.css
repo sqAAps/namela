@@ -1,0 +1,100 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(../images/background.png);
+    background-repeat: no-repeat;
+}
+div#header{
+	color: #FFBA66;
+	height: 45px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	background-color: white;
+}
+div#container{
+	width: 100%;
+    padding: 20px 0px 10px 0px;
+}
+div#introduction{
+	background-color: rgba(255,255,223,0.7);
+    padding: 10px 10% 10px 10%;
+    color: #414042;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+div#login_register{
+	margin-top: 30px;
+    text-align: center;
+}
+div.div_button{
+	background-color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    border: 1px solid orange;
+    border-radius: 2px;
+    display: inline-block;
+    font-weight: 600;
+    width: 30%;
+    text-align: center;
+    color: #414042;
+}
+div#login{
+	margin-right: 5%
+}
+div#login_tab{
+	width: 90%;
+    display: block;
+    margin: auto;
+}
+p#input_head {
+    margin: 0px;
+    font-size: 12px;
+    font-family: sans-serif;
+	color: #414042;
+}
+input.register_inputs {
+    height: 25px;
+    width: 96%;
+    padding: 0px 2%;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    border-radius: 1px;
+}
+
+button#submit {
+    width: 100%;
+    margin: 5px 0px 40px 0px;
+    height: 40px;
+    display: block;
+    font-size: 22px;
+    color: white;
+    background-color: #FFA81B;
+    border: 2px solid #FFA81B;
+    border-radius: 2px;
+}
+form#login_form{
+	display: none;
+}
+div#close_form{
+	position: relative;
+    left: 90%;
+    width: 5%;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+p#error_messages{
+	margin: 0;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    background-color: black;
+	color: red;
+}

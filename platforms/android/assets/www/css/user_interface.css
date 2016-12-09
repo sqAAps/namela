@@ -1,0 +1,281 @@
+body, html{
+	height: 100%;
+    margin: 0;
+    padding: 0;
+	background-color: #5A6E8B;
+}
+img.header_img{
+	height: 28px;
+}
+img#menu{
+	float: left;
+    margin-left: 5%;
+}
+img#log_out{
+	float: right;
+    margin-right: 5%;
+}
+div#user_container{
+	background-color: white;
+    border-bottom: 30px solid #5A6E8B;
+    padding-top: 5px;
+}
+div#profile_name{
+	width: 90%;
+    margin: 0px 5%;
+    padding: 5px 0px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #BBBDBF
+}
+div#profile_pictures{
+	width: 12%;
+    display: inline-block;
+}
+img#profile_img{
+	width: 100%;
+    border-radius: 100%;;
+}
+div#profile_fullname{
+	display: inline-block;
+    vertical-align: top;
+    width: 86%;
+}
+p#fullNames{
+	margin: 0;
+    margin-left: 5%;
+    margin-top: 2px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #404041;
+    vertical-align: top
+}
+p#edit{
+	margin: 0;
+    margin-left: 5%;
+    margin-top: 2px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #404041;
+    vertical-align: top;
+    float: right;
+    border: 1px solid #FBB040;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+img#edit_img{
+	width: 16px;
+    display: inline-block;
+}
+span#edit_span{
+	vertical-align: super;
+}
+p#address_menu_p{
+	text-align: center;
+}
+img#address_menu{
+	height: 15px;
+}
+span#address_menu_span{
+	font-family: monospace;
+}
+div#location_div{
+	display: none;
+}
+div#profile_location1, div#profile_location{
+	width: 96%;
+    margin: 10px 2% 0px 2%;
+    padding-bottom: 10px;
+}
+div#add_date{
+	background-color: white;
+    padding: 4px 0px;
+    text-align: center;
+    font-family: sans-serif;
+    border-bottom: 20px solid #5A6E8B;
+    padding-bottom: 15px;
+}
+p#add_trip{
+	vertical-align: super;
+    font-size: 18px;
+    color: #414042;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 5px 0px;
+	border-bottom: 1px solid gainsboro;
+}
+
+
+div.user_places{
+	width: 45%;
+    display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+}
+img.location_img{
+	height: 20px
+}
+p.location{
+	margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #58595B;
+	text-align: center;
+}
+p.location_address{
+	margin: 0;
+    margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+
+div.ticket{
+	border: 1px solid #F1F2F2;
+    margin: auto;
+    border-radius: 12px;
+    background-color: greenyellow;
+    padding-left: 10px;
+    width: 88%;
+    margin-top: 20px;
+}
+div.ticket_details{
+	width: 96%;
+    background: white;
+    padding: 10px 2%;
+    border-radius: 0px 12px 12px 0px;
+}
+div.valid, div.triptype{
+	display: inline-block;
+    width: 48%;
+}
+p.valid_until, p.triptype_p{
+    font-size: 10px;
+    font-family: monospace;
+    margin: 0;
+}
+p.date, p.triptype_icon{
+	margin: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+div.arrangements{
+	margin: 10px 0px;
+}
+div.drivedetails{
+	display: inline-block;
+    width: 30%;
+}
+img#pickupHome{
+	height: 10px;
+	margin-right: 5px;
+}
+
+div#menu_bar{
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	z-index: 2;
+	background-color: #5A6E8B;
+	margin-left: -100%;
+	top: 0px;
+	border-right: 3px solid white;
+}
+div#personal_details{
+	background-color: orange;
+    background-image: url(../images/background-cabs.png);
+    border-bottom: 3px solid white;
+    margin-bottom: 10px;
+}
+img#profile_img_menu{
+	height: 35px;
+    margin: 15px 5%;
+}
+div#details_div{
+	display: inline-block;
+    vertical-align: top;
+}
+p#full_names{
+	margin: 0;
+    margin-top: 14px;
+}
+p#tickets{
+	font-size: 12px;
+    margin: 0;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+img#close_menu{
+	margin: 2%;
+    height: 20px;
+    float: right;
+    background-color: #E07400;
+    padding: 6px;
+}
+div.menu_item{
+	padding: 5px 0% 5px 10%;
+}
+img.menu_img{
+	width: 10%;
+}
+span.menu_span{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    margin-left: 10%;
+    font-family: monospace;
+    color: white;
+    font-weight: normal;
+}
+
+
+
+div#from{
+	margin-top: 15px
+}
+div.from_items{
+	width: 49%;
+    display: inline-block;
+}
+img.from_home{
+	width: 40%;
+}
+p.from_text{
+	color: orange;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 5px;
+}
+div#from_home{
+	border-right: 1px solid gainsboro;
+}
+a.menu_a{
+	color: white;
+	text-decoration: none;
+}
+
+
+p.upcoming_dates{
+	margin: 0px;
+    padding: 5px 5%;
+    font-family: monospace;
+    border-top: 1px solid gainsboro;
+    font-size: 14px;
+    background-color: white;
+}
+span.upcoming_type{
+	margin-left: 15%;
+}
+p#no_trips{
+	background-color: white;
+    margin: 0px;
+    padding: 1px 0px;
+    border-top: 1px solid gainsboro;
+    text-align: center;
+    padding-bottom: 5px;
+    color: olive;
+}

@@ -1,0 +1,54 @@
+body{
+	background-color: #F1F2F2;
+}
+button#add_code{
+	display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 10px 0px;
+    color: white;
+}
+div#invite_rides{
+	width: 90%;
+    padding: 8px 2%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: white;
+	border-radius: 10px;
+}
+div#free_ride_img{
+	display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+img#img_free{
+	display: block;
+    margin: auto;
+    width: 100%;
+}
+div#want_free{
+	display: inline-block;
+    width: 59%;
+}
+p#free{
+	margin: 0px;
+    font-size: 18px;
+}
+p#invite{
+	margin: 0;
+    font-family: monospace;
+    font-size: 15px;
+    color: orange;
+}
+
+p#notifications{
+	text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}

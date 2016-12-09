@@ -1,0 +1,121 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(../images/background.png);
+    background-repeat: repeat;
+}
+div#header{
+	color: orange;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-family: sans-serif;
+    border-bottom: 1px solid orange;
+    text-align: center;
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 11px #58595B;
+}
+img#logo{
+	width: 15%;
+}
+div#container{
+	width: 100%;
+    padding: 20px 0px 10px 0px;
+}
+div#introduction{
+	background-color: rgba(247,148,29,0.7);
+    padding: 10px 10% 10px 10%;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px 0px;
+}
+}
+div#login_register{
+	margin-top: 30px;
+    text-align: center;
+}
+div.div_button{
+	background-color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    border: 1px solid orange;
+    border-radius: 6px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+	box-shadow: 0px 0px 2px 2px chocolate;
+}
+div#login_register{
+	text-align: center;
+    margin-top: 15px;
+}
+div#login{
+	margin-right: 5%
+}
+div#login_tab{
+	width: 90%;
+    padding: 0px 5%;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: white;
+    margin-top: 10px;
+}
+p#input_head {
+    margin: 0px;
+    font-size: 13px;
+    font-family: monospace;
+    color: #414042;
+}
+input.register_inputs {
+    height: 25px;
+    width: 96%;
+    padding: 0px 2%;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: orange;
+    border-radius: 1px;
+	box-shadow: 0px 0px 1px 0px orangered;
+}
+
+button#submit {
+    width: 100%;
+    margin: 5px 0px 20px 0px;
+    display: block;
+    font-size: 22px;
+    color: white;
+    background-color: #FFA81B;
+    border: 2px solid orange;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 2px #A85A21;
+}
+form#login_form{
+	display: none;
+	margin-bottom: 20px;
+}
+div#close_form{
+	position: relative;
+    left: 80%;
+    width: 52px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+p#error_messages{
+	margin: 0;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    background-color: black;
+	color: red;
+}

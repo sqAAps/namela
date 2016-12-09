@@ -1,0 +1,143 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+div#header{
+	color: white;
+	background-color: #FFBA66;
+	height: 45px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 10px;
+}
+h1#promote{
+	text-align: center;
+	margin: 10px 0px;
+	font-family: sans-serif;
+	font-weight: 100;
+	color: lightslategrey;
+}
+div#value_prop{
+	margin: 0px 5%;
+	font-family: sans-serif;
+	color: darkslategray;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+p#value_prop_para{
+	margin: 5px 0px;
+}
+
+div.chapter_section{
+	width: 90%;
+    margin: 0px 5%;
+}
+p.chapter_section_head{
+	margin: 0;
+	margin-bottom: 4px;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+	margin-left: 5%;
+	color: lightslategrey;
+}
+
+p#input_head{
+	margin: 0px;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: dimgray;
+}
+input.register_inputs{
+	height: 25px;
+	width: 96%;
+	padding: 0px 2%;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gainsboro;
+	border-radius: 1px;
+}
+input#cell_number{
+	margin-bottom: 4px;
+}
+p#error_messages{
+	margin: 5px 0px;
+    font-weight: 600;
+}
+p#terms_conditions{
+	margin: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+span#create_account_lighter{
+	color: orange;
+}
+
+button#submit{
+	width: 100%;
+	margin: 10px 0px 40px 0px;
+	height: 40px;
+	display: block;
+	font-size: 22px;
+	color: white;
+	background-color: #FFA81B;
+	border: 2px solid;
+	border-radius: 2px;
+}
+
+
+
+h1#confirmation_head{
+	text-align: center;
+    margin: 10px 3%;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: orange;
+}
+p#confirmation_paragraph{ 
+	margin: 0px 5% 10px;
+	font-family: sans-serif;
+    font-weight: 100;
+}
+
+button#go_to_maps{
+	margin: 60px 5% 10px;
+    border: 0px solid;
+    background-color: #FFA81B;
+    width: 90%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    /* bottom: 2px; */
+    color: white;
+    font-family: sans-serif;
+}
+
+/*          SCREEN      768     */
+@media screen and (max-width:425px){
+
+}
+
+
+input#confCode {
+	height: 25px;
+    width: 30%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border-color: orange;
+    border-width: 0px 0px 1px 0px;
+}
+
+#codeError {
+	text-align: center;
+}
+
+#confimation {
+	display: none;
+}
