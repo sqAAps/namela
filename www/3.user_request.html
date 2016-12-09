@@ -557,7 +557,7 @@
 				
 				
 				//Get currently selected dates
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 				//var ajax = ajaxObj("POST", "php/user_requests.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
@@ -602,7 +602,7 @@
 				//Bookings for the current month
 				if (selected_month > month){
 					var property = _(id);
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 					//var ajax = ajaxObj("POST", "php/user_requests.php");
 					
 					if (property.className != 'active') {
@@ -631,7 +631,7 @@
 				}
 				else if(selected_month = month && selected_date >= date){
 					var property = _(id);
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 					//var ajax = ajaxObj("POST", "php/user_requests.php");
 					
 					if (property.className != 'active') {
