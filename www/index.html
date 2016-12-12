@@ -17,7 +17,7 @@
 				var password = localStorage.getItem("password");
 
 				status.innerHTML = 'please wait ...';
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/login.php");
 				//var ajax = ajaxObj("POST", "php/login.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
@@ -96,7 +96,7 @@
                 } else {
                     _("submit").style.display = "none";
                     status.innerHTML = 'please wait ...';
-                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/login.php");
 					//var ajax = ajaxObj("POST", "php/login.php");
                     ajax.onreadystatechange = function() {
                         if(ajaxReturn(ajax) == true) {
