@@ -28,7 +28,7 @@
 		<script>
 			function trips(){	
 				//var ajax = ajaxObj("POST", "../php/user_interface.php");
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_interface.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_interface.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
 						_("user_interface").innerHTML = ajax.responseText;

@@ -94,7 +94,7 @@
 						_("email").style.borderWidth = "1px";
 						_("submit").disabled = false;
 						
-                    	var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/register.php");
+                    	var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/register.php");
                     	
 						ajax.onreadystatechange = function() {
                         	if(ajaxReturn(ajax) == true) {
@@ -155,7 +155,7 @@
 					
                     _("submit").style.display = "none";
                     status.innerHTML = 'please wait ...';
-                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/register.php");
+                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/register.php");
                     ajax.onreadystatechange = function() {
                         if(ajaxReturn(ajax) == true) {
                             if(ajax.responseText === 'signup_success'){
@@ -187,7 +187,7 @@
 					
 					var statusCode = _("codeError");
 					statusCode.innerHTML = 'please wait ...';
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/confirmCode.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/confirmCode.php");
                     ajax.onreadystatechange = function() {
                         if(ajaxReturn(ajax) == true) {
                             if(ajax.responseText === "Activated"){

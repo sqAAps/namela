@@ -126,7 +126,7 @@
 				} else {
                     status.innerHTML = 'please wait ...';
                     
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/maps.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/maps.php");
 					//var ajax = ajaxObj("POST", "php/maps.php");
 					ajax.onreadystatechange = function() {
                         if(ajaxReturn(ajax) == true) {
@@ -139,9 +139,7 @@
                     }
 					ajax.send("home_address="+home_address+"&work_address="+work_address+"&work_checkIn="+work_checkIn+"&work_checkOut="+work_checkOut);
                 }
-			}
-            
-			
+			} 			
 			
             var map = null;
             var marker;

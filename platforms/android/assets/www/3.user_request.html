@@ -29,6 +29,8 @@
 			<span class="type_text">From Work to Home</span>
 		</div>
 		
+		
+		
 		<div class="calender" id="month.8">
 			<div class="month"> 
 				<ul>
@@ -95,8 +97,6 @@
 				<li id="month.8.day.30" onclick='selectdag("month.8.day.30")'>30</li>
 			</ul>
 		</div>
-		
-		
 		
 		
 		<div class="calender" id="month.9">
@@ -171,8 +171,6 @@
 		</div>
 		
 		
-		
-		
 		<div class="calender" id="month.10">
 			<div class="month"> 
 				<ul>
@@ -236,7 +234,6 @@
 				<li id="month.10.day.30" onclick='selectdag("month.10.day.30")'>30</li>
 			</ul>
 		</div>
-		
 		
 		
 		<div class="calender" id="month.11">
@@ -308,9 +305,6 @@
 		</div>
 		
 		
-		
-		
-		
 		<div class="calender" id="month.0">
 			<div class="month"> 
 				<ul>
@@ -375,8 +369,6 @@
 		</div>
 		
 		
-		
-		
 		<div class="calender" id="month.1">
 			<div class="month"> 
 				<ul>
@@ -439,9 +431,6 @@
 			  	<li id="month.1.day.28" onclick='selectdag("month.1.day.28")'>28</li>
 			</ul>
 		</div>
-		
-		
-		
 		
 		
 		<div class="calender" id="month.2">
@@ -511,8 +500,6 @@
 		</div>
 		
 		
-		
-		
 		<div id="confirm">
 			<a id="" href="4.user_interface.html">
 				<div id="pick_dates">DONE</div>
@@ -570,7 +557,7 @@
 				
 				
 				//Get currently selected dates
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 				//var ajax = ajaxObj("POST", "php/user_requests.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
@@ -615,7 +602,7 @@
 				//Bookings for the current month
 				if (selected_month > month){
 					var property = _(id);
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 					//var ajax = ajaxObj("POST", "php/user_requests.php");
 					
 					if (property.className != 'active') {
@@ -644,7 +631,7 @@
 				}
 				else if(selected_month = month && selected_date >= date){
 					var property = _(id);
-					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_requests.php");
+					var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_requests.php");
 					//var ajax = ajaxObj("POST", "php/user_requests.php");
 					
 					if (property.className != 'active') {

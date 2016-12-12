@@ -73,7 +73,7 @@
 			function logout(){
 				localStorage.removeItem("phoneNumber");
 				localStorage.removeItem("password");
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/login.php");
 				//var ajax = ajaxObj("POST", "../php/login.php");
 				ajax.send("logout="+'');
 				window.location.assign("../index.html")

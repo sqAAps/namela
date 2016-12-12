@@ -17,12 +17,12 @@
 				var password = localStorage.getItem("password");
 
 				status.innerHTML = 'please wait ...';
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/login.php");
 				//var ajax = ajaxObj("POST", "php/login.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
 						if(ajax.responseText === 'autologin_successful'){
-							window.location.assign("4.user_interface.html")
+							window.location.assign("4.user_interface.html");
 						} else {
 							status.innerHTML = ajax.responseText;
 							_("submit").style.display = "block";
@@ -43,7 +43,7 @@
 		
 		<div id="container">
 			<div id="introduction">
-				Wanderu is the simplest way to find and book bus and train travel across North America. Now you can book the best deals on the go with the official Wanderu app, featured as "Best New App" by the iTunes App Store and Google Play.<br><br> Compare and book trips, view your past reservations, and save your favorite frequently searched trips all from the app. See why TIME Magazine named Wanderu a "Favorite New App."
+				<span id="n_namela">n</span>amela is the simplest way to find and book transport to travel work across South Africa. Now you can book the best deals on the go with the official <span id="n_namela">n</span>amela app, featured as "Best New App" by the iTunes App Store and Google Play.<br><br> Compare and book trips, view your past reservations, and save your favorite frequently searched trips all from the app. See why TIME Magazine named Wanderu a "Favorite New App."
 			</div>
 			
 			<div id="login_register">
@@ -96,7 +96,7 @@
                 } else {
                     _("submit").style.display = "none";
                     status.innerHTML = 'please wait ...';
-                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/login.php");
+                    var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/login.php");
 					//var ajax = ajaxObj("POST", "php/login.php");
                     ajax.onreadystatechange = function() {
                         if(ajaxReturn(ajax) == true) {

@@ -35,10 +35,6 @@
 							_("fullNames").innerHTML = localStorage.getItem("name")+" "+localStorage.getItem("surname")
 						</script>
 					</p>
-					<p id="edit" onclick="edit_info()">
-						<img id="edit_img" href="../2.maps.html" src="images/edit-icon.png"/>
-						<span id="edit_span">Edit info</span>
-					</p>
 				</div>
 			</div>
 
@@ -99,6 +95,11 @@
 						</p>
 					</div>
 				</div>
+				
+				<p id="edit" onclick="edit_info()">
+					<img id="edit_img" href="../2.maps.html" src="images/edit-icon.png"/>
+					<span id="edit_span">Edit info</span>
+				</p>
 			</div>
 		</div>
 		
@@ -157,12 +158,14 @@
 				</div>
 			</a>
 
+			<!--
 			<a class="menu_a" href="html/help.html">
 				<div class="menu_item">
 					<img class="menu_img" src="images/help.png"/>
 					<span class="menu_span">Help</span>
 				</div>
 			</a>
+			-->
 
 			<a class="menu_a" href="html/settings.html">
 				<div class="menu_item">
@@ -204,7 +207,7 @@
 		<script type="text/javascript">		
 			function profile(){
 				var user_interface = _("user_interface");
-				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_interface.php");
+				var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_interface.php");
 				//var ajax = ajaxObj("POST", "./php/user_interface.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
@@ -225,7 +228,7 @@
 			
 			/*function add_trip(type){
 				var user_interface = _("user_interface");
-				//var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/user_interface.php");
+				//var ajax = ajaxObj("POST", "http://www.sqaaps.co.za/php/namela/user_interface.php");
 				var ajax = ajaxObj("POST", "php/user_interface.php");
 				ajax.onreadystatechange = function() {
 					if(ajaxReturn(ajax) == true) {
